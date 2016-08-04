@@ -13,9 +13,11 @@ small()
   u-mar t 3rem
   u-mar b 3rem
   u-fill a
+  background-color lightgray
 
 .content-block
-  u-pad t 1rem
+  u-mar t 1rem
+  background-color white
   
 
 .search-bar
@@ -34,9 +36,49 @@ small()
   background-color white
 
 .list-item
-  u-pad l 1rem
-  u-pad r 1rem
-  border-bottom 2px lightgray solid
   position relative
   top 0
+  u-pad l 1rem
+  u-pad r 1rem
   background-color white
+  border-bottom 2px lightgray solid
+
+  &:last-child
+    border none
+
+
+.one-line-input-box
+  position relative
+  top 0
+  u-mar l 1rem
+  u-mar r 1rem
+  background-color white
+  height 3rem
+  line-height 3rem
+  border-bottom 2px lightgray solid
+
+  &:last-child
+    border none
+
+.mulit-line-input-box
+  position relative
+  top 0
+  u-mar l 1rem
+  u-mar r 1rem
+  u-pad t 0.5rem
+  u-pad b 0.5rem
+  background-color white
+  border-bottom 2px lightgray solid  
+
+  &:last-child
+    border none
+  
+.mulit-line-input--nav
+  u-pad t 0.5rem
+  u-pad b 0.5rem
+  height 2rem
+  line-height 2rem
+
+.mulit-line-input--text
+  u-pad t 0.5rem
+  u-pad b 0.5rem

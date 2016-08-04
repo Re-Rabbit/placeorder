@@ -3,7 +3,45 @@
 {% import "tpls/macros.html" as $ %}
 
 {% block content %}
- <main>
+<main>
+    <div class="content">
+        <div class="content-block">
+            <div class="one-line-input-box">
+                <div class="store-create-nav">
+                    仓库名称
+                </div>
+                <input class="store-create-input" />
+            </div>
+            <div class="one-line-input-box">
+                <div class="store-create-nav">
+                    省、市、区
+                </div>
+                <input class="store-create-input" />
+            </div>
+            <div class="mulit-line-input-box">
+                <div class="store-create-nav-line">
+                    详细地址
+                </div>
+                <textarea class="store-create-input__mulit-line">
+                </textarea>
+            </div>
+        </div>
+
+        <div class="content-block">
+            <div class="one-line-input-box">
+                <div class="store-create-nav">
+                    联系人
+                </div>
+                <input class="store-create-input" />
+            </div>
+            <div class="one-line-input-box">
+                <div class="store-create-nav">
+                    联系电话
+                </div>
+                <input class="store-create-input" />
+            </div>
+        </div>
+    </div>
  </main>
 {% endblock %}
 
