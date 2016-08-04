@@ -1,0 +1,80 @@
+$pc = red
+
+.header
+  pad 1rem
+  bdt 2px solid $pc
+
+.select
+  reset-theme()
+  pos rela
+
+.select-contrl
+  pad 1rem
+  color #ddd
+  
+.select-dd
+  fill r
+
+.number
+  reset-theme()
+  ta r
+  cc #888 #fff
+
+.action-create
+  reset-theme()
+  ta cen
+  cc #888
+
+.list-row
+  bg #ddd
+
+.list-left
+  cc #888
+
+.list-right
+  cc #ddd
+
+.list-left
+.list-right
+  pos rela
+
+.list-icon
+.list-arrow
+  pos abso
+
+
+.radio
+  pos rela
+  pl 1.5rem
+  
+.radio-field
+  fill l
+  dis ib
+  size 1rem
+  bdrz 50%
+  bd 1px solid $pc
+
+  &:after
+    ctx ""
+    pos abso
+    dis ib
+
+    $s = 0.8    
+    size unit(0.8, rem)
+    bg $pc
+    l 50%
+    t 50%
+    ml - unit(($s / 2), rem)
+    mt - unit(($s / 2), rem)
+
+.footer
+  fill b
+  h unit((1 * 1.5 + 2), rem)
+
+.footer-left
+  pad 1rem
+
+.footer-right
+  pad 1rem
+  size 8rem 100%
+  cc #fff $pc
