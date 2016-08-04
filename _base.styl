@@ -1,0 +1,42 @@
+@require "styles/util/box"
+@require "styles/util/position"
+@require "styles/reset"
+
+body
+  background-color lightgray
+
+small()
+  color gray
+  font-size 0.8rem
+
+.content
+  u-mar t 3rem
+  u-mar b 3rem
+  u-fill a
+
+.content-block
+  u-pad t 1rem
+  
+
+.search-bar
+  background-color gray
+  u-pad a 0.5rem
+  height 3rem
+  
+.search-input
+  text-align center
+  width 100%
+  height 2rem
+  line-heiht 2rem
+  border none
+  border-radius 0.3rem
+  reset-theme()
+  background-color white
+
+.list-item
+  u-pad l 1rem
+  u-pad r 1rem
+  border-bottom 2px lightgray solid
+  position relative
+  top 0
+  background-color white
