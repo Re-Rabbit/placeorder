@@ -1,0 +1,82 @@
+@require "styles/util/box"
+@require "styles/util/position"
+@require "styles/reset"
+
+body
+  background-color lightgray
+
+small()
+  color gray
+  font-size 0.8rem
+
+.header
+  u-fill(t, true)
+  height 3rem
+  line-height 3rem
+  width 100%
+  background-color white
+
+.header--left,.header--right
+  u-pad l 1rem
+  u-pad r 1rem
+
+.header--main
+  u-fill a
+  text-align center
+
+.content
+  u-mar t 3rem
+  u-mar b 3rem
+  u-fill a
+
+.content-block
+  u-pad t 1rem
+  
+
+.search-bar
+  background-color gray
+  u-pad a 0.5rem
+  height 3rem
+  
+.search-input
+  text-align center
+  width 100%
+
+.list-item
+  u-pad l 1rem
+  u-pad r 1rem
+  border-bottom 2px lightgray solid
+  position relative
+  top 0
+  background-color white
+
+.list-user-item
+  u-pad t 0.5rem
+  u-pad b 0.5rem
+  height 4rem
+
+.user-info
+  height 3rem
+
+.user-name
+  height 2rem
+  line-height 2rem
+
+.user-name--full
+  height 1rem
+  line-height 1rem
+  small()
+
+.user-detial
+  u-fill r
+  u-pad r 1rem
+  line-height 4rem
+
+
+
+
+
+  
+
+
+
