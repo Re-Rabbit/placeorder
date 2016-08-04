@@ -1,0 +1,31 @@
+{# -*- mode: jinja2 -*- #}
+
+{% import "tpls/macros.html" as $ %}
+
+{% block content %}
+<main>
+  <nav><ul>
+    <li><a href="user-list.html">客户列表</a></li>
+    <li><a href="goods-list.html">商品列表</a></li>
+    <li><a href="store-list.html">仓库列表</a></li>
+    <li><a href="store-create.html">仓库创建</a></li>
+  </ul></nav>
+</main>
+{% endblock %}
+
+
+{% block styles %}
+{{ $.css("index") }}
+{% endblock %}
+
+
+{% block scripts %}
+{{ $.js("vendor.dll") }}
+{{ $.js("tool.dll") }}
+{{ $.js("commons") }}
+{{ $.js("index") }}
+{% endblock %}
+
+
+{% extends "tpls/page.html" %}
+
