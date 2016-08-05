@@ -3,7 +3,46 @@
 {% import "tpls/macros.html" as $ %}
 
 {% block content %}
- <main>
+<main>
+    <div class="popup-background">
+        <div class="popup">
+            <div class="popup-main">
+                <div class="goods-edit-user">
+                    <div class="edit-user-input-box edit-user-focus">
+                        <input class="edit-user-input" placeholder="王小明">
+                    </div>
+                    <div class="edit-user-input-box">
+                        <input class="edit-user-input" placeholder="15525019342">
+                    </div>
+                </div>
+            </div>
+            <div class="popup-footer">
+                <div class="popup-footer-left">
+                    取消
+                </div>
+                <div class="popup-footer-right red">
+                    确认
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="popup-background">
+        <div class="popup">
+            <div class="popup-main">
+                <div class="goods-commit">
+                    是否提交该订单
+                </div>
+            </div>
+            <div class="popup-footer">
+                <div class="popup-footer-left">
+                    取消
+                </div>
+                <div class="popup-footer-right red">
+                    确认
+                </div>
+            </div>
+        </div>
+    </div>
  </main>
 {% endblock %}
 
