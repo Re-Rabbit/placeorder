@@ -1,54 +1,117 @@
-$pc = red
 
-.header
-  pad 1rem
-  bdt 2px solid $pc
+$control-py = 0.8rem
+
+.goods-list-header
+  pad 0.5rem 1rem
+  bdt 3px solid $pc
+  bg #fff
 
 .select
   reset-theme()
   pos rela
 
-.select-contrl
+.select-control
+  dis bl
   pad 1rem
-  color #ddd
+  cc #aaa #fff
+  py $control-py
+  pr 2rem
+  bdrz 4px
   
 .select-dd
-  fill r
+  u-fill(r)
+  size 2rem
+  ta cen
+  fz 1.5rem
+  cc #aaa
+  py ($control-py - 0.3rem)
+
+.select-field
+  dis no
 
 .number
+  pos rela
+  pr 1.5rem
+  dis bl
+
+.number-control
+  reset-space()
   reset-theme()
+  reset-font()
+  lh 1.5
+  w 100%
   ta r
-  cc #888 #fff
+  bg #fff
+  py $control-py
+  bdrz 4px
+
+.number-label
+  u-fill(r)
+  size 1rem
+  ta cen
+  py $control-py
+
+
 
 .action-create
   reset-theme()
   ta cen
-  cc #888
+  cc #aaa
+  pad $control-py
+  bd 1px dotted #fff
+  bdrz 4px
+  .icon
+    cc $pc
+
+.list-container
+  bg #fff
 
 .list-row
-  bg #ddd
+  bg $bgc
 
 .list-left
-  cc #888
+  cc #555
+  py $control-py
+  pl 2rem
 
 .list-right
-  cc #ddd
+  cc #888
+  ta r
+  py $control-py
+  pr 2rem
 
 .list-left
 .list-right
   pos rela
 
-.list-icon
 .list-arrow
-  pos abso
+  u-fill(r)
+  size 2rem
+  ta cen
+  py 0.5rem
+  fz 1.5rem
+
+.list-icon
+  u-fill(l)
+  size 2rem
+  ta cen
+  py 0.5rem
+  fz 1.5rem
+  .icon
+    cc $pc
 
 
 .radio
   pos rela
   pl 1.5rem
-  
+  dis ib
+
 .radio-field
-  fill l
+  dis no
+
+.radio-control
+  u-fill(l)
+  t 0.2rem
   dis ib
   size 1rem
   bdrz 50%
@@ -59,17 +122,19 @@ $pc = red
     pos abso
     dis ib
 
-    $s = 0.8    
-    size unit(0.8, rem)
+    $s = 0.6
+    size unit($s, rem)
     bg $pc
+    bdrz 50%
     l 50%
     t 50%
     ml - unit(($s / 2), rem)
     mt - unit(($s / 2), rem)
 
 .footer
-  fill b
+  u-fill(b, true)
   h unit((1 * 1.5 + 2), rem)
+  bg #fff
 
 .footer-left
   pad 1rem
@@ -78,6 +143,7 @@ $pc = red
   pad 1rem
   size 8rem 100%
   cc #fff $pc
+  ta cen
 
 
 

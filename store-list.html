@@ -4,26 +4,39 @@
 
 {% block content %}
  <main>
-     <div class="content">
+     <div class="">
          <div class="content-block">
-             <div class="list-item list-store-item">
-                 <div class="store-name">华北仓库</div>
+           <div class="list-item list-store-item row">
+             <div class="grid">
+               <div class="store-name">华北仓库</div>
              </div>
-             <div class="list-item list-store-item">
-                 <div class="store-name">华北仓库</div>
+             <div class="grid-last">
+               <div class="checkbox">
+                 <span class="icon ion-md-checkmark-circle"></span>
+                 <div class="checkbox-circle"></div>
+                 <input class="checkbox-field" name="" type="radio" value=""/>
+               </div>
              </div>
-             <div class="list-item list-store-item">
-                 <div class="store-name">华北仓库</div>
+           </div>
+
+           <div class="list-item list-store-item row">
+             <div class="grid">
+               <div class="store-name">华北仓库</div>
              </div>
-             <div class="list-item list-store-item">
-                 <div class="store-name">华北仓库</div>
+             <div class="grid-last">
+               <div class="checkbox active">
+                 <span class="icon ion-md-checkmark-circle"></span>
+                 <div class="checkbox-circle"></div>
+                 <input class="checkbox-field" name="" type="radio" value=""/>
+               </div>
              </div>
-             <div class="list-item list-store-item">
-                 <div class="store-name">华北仓库</div>
-             </div>
+           </div>
          </div>
      </div>
  </main>
+ <footer class="footer">
+   <div class="action-save">保存</div>
+ </footer>
 {% endblock %}
 
 
@@ -33,10 +46,10 @@
 
 
 {% block scripts %}
-  {{ $.js("vendor.dll") }}
-  {{ $.js("tool.dll") }}
-  {{ $.js("commons") }}
-  {{ $.js("index") }}
+  {{ $.js("/vendor.dll") }}
+  {{ $.js("/tool.dll") }}
+  {{ $.js("/commons") }}
+  {{ $.js("store-list") }}
 {% endblock %}
 
 

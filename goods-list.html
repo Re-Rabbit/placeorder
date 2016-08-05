@@ -1,62 +1,184 @@
+{# -*- coding: utf-8 -*- #}
 {# -*- mode: jinja2 -*- #}
 
 {% import "tpls/macros.html" as $ %}
 
 {% block content %}
 <main>
-    <div class="popup-background">
-        <div class="popup">
-            <div class="popup-main">
-                <div class="goods-edit-user">
-                    <div class="edit-user-input-box edit-user-focus">
-                        <input class="edit-user-input" placeholder="王小明">
-                    </div>
-                    <div class="edit-user-input-box">
-                        <input class="edit-user-input" placeholder="15525019342">
-                    </div>
-                </div>
+  <div class="u-mar-b--1"> </div>
+  <div class="u-mar-b--1">
+
+    <div class="goods-list-header">华北长裤</div>
+
+    <div class="u-pad-y--1 u-pad-x--0d5">
+      <div class="row u-mar-b--1">
+        <div class="grid width--8">
+          <div class="u-pad-x--0d5">
+            <div class="select">
+              <label for="select1" class="select-control">选择产品</label>
+              <div class="select-dd">
+                <span class="ion-ios-arrow-down"></span>
+              </div>
+              <select id="select1" name="" class="select-field">
+                <option value="">1</option>
+                <option value="">2</option>
+              </select>
             </div>
-            <div class="popup-footer">
-                <div class="popup-footer-left">
-                    取消
-                </div>
-                <div class="popup-footer-right red">
-                    确认
-                </div>
-            </div>
+          </div>
         </div>
-    </div>
-    <div class="popup-background">
-        <div class="popup">
-            <div class="popup-main">
-                <div class="goods-commit">
-                    是否提交该订单
-                </div>
-            </div>
-            <div class="popup-footer">
-                <div class="popup-footer-left">
-                    取消
-                </div>
-                <div class="popup-footer-right red">
-                    确认
-                </div>
-            </div>
+        <div class="grid width--4">
+          <div class="u-pad-x--0d5">
+          <label class="number" for="">
+            <input class="number-control" name="" type="number" value="1000"/>
+            <div class="number-label">个</div>
+          </label>
+          </div>
         </div>
+      </div>
+
+      <div class="u-pad-x--0d5">
+        <div class="action-create">
+          <span class="icon ion-md-add"></span> 添加产品
+        </div>
+      </div>
     </div>
- </main>
+
+    <div class="u-pad-y--1 list-container">
+      <div class="list-row row u-mar-b--1">
+        <div class="list-left grid width--6">
+          <div class="list-icon">
+            <span class="icon ion-ios-alarm-outline"></span>
+          </div>
+          交货日期
+        </div>
+        <div class="list-right grid width--6">
+          <div class="list-arrow">
+            <span class="icon ion-ios-arrow-forward"></span>
+          </div>
+          选择交货日期
+        </div>
+      </div>
+
+      <div class="list-row row">
+        <div class="list-left grid width--6">
+          <div class="list-icon">
+            <span class="icon ion-ios-person-outline"></span>
+          </div>
+          联系人
+        </div>
+        <div class="list-right grid width--6">
+          <div class="list-arrow">
+            <span class="icon ion-ios-arrow-forward"></span>
+          </div>
+          王小明 155250193565
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="u-mar-b--1">
+
+    <div class="goods-list-header">华北长裤</div>
+
+    <div class="u-pad-y--1 u-pad-x--0d5 goods-block">
+      <div class="goods-list">
+        <div class="row u-mar-b--1 goods-item">
+          <div class="grid width--8">
+
+          <div class="u-pad-x--0d5">
+            <div class="select">
+              <label for="select1" class="select-control">选择产品</label>
+              <div class="select-dd">
+                <span class="ion-ios-arrow-down"></span>
+              </div>
+              <select id="select1" name="" class="select-field">
+                <option value="">1</option>
+                <option value="">2</option>
+              </select>
+            </div>
+          </div>
+
+        </div>
+        <div class="grid width--4">
+          <div class="u-pad-x--0d5">
+            <label class="number" for="">
+              <input class="number-control" name="" type="number" value="1000"/>
+              <div class="number-label">个</div>
+            </label>
+          </div>
+        </div>
+      </div>
+      </div>
+
+      <div class="u-pad-x--0d5">
+        <div class="action-create">
+          <span class="icon ion-md-add"></span> 添加产品
+        </div>
+      </div>
+    </div>
+
+    <div class="u-pad-y--1 list-container">
+      <div class="list-row row u-mar-b--1">
+        <div class="list-left grid width--6">
+          <div class="list-icon">
+            <span class="icon ion-ios-alarm-outline"></span>
+          </div>
+          交货日期
+        </div>
+        <div class="list-right grid width--6">
+          <div class="list-arrow">
+            <span class="icon ion-ios-arrow-forward"></span>
+          </div>
+          选择交货日期
+        </div>
+      </div>
+
+      <div class="list-row row">
+        <div class="list-left grid width--6">
+          <div class="list-icon">
+            <span class="icon ion-ios-person-outline"></span>
+          </div>
+          联系人
+        </div>
+        <div class="list-right grid width--6">
+          <div class="list-arrow">
+            <span class="icon ion-ios-arrow-forward"></span>
+          </div>
+          王小明 155250193565
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</main>
+
+<footer class="footer row">
+  <div class="grid footer-left">
+    <div class="radio">
+      <div class="radio-control"></div>
+      <input class="radio-field" name="" type="radio" value=""/>
+      默认日期一致
+    </div>
+  </div>
+  <div class="footer-right grid-last">
+提交订单
+  </div>
+</footer>
 {% endblock %}
 
 
 {% block styles %}
-  {{ $.css("index") }}
+{{ $.css("index") }}
 {% endblock %}
 
 
 {% block scripts %}
-  {{ $.js("vendor.dll") }}
-  {{ $.js("tool.dll") }}
-  {{ $.js("commons") }}
-  {{ $.js("index") }}
+{{ $.js("/vendor.dll") }}
+{{ $.js("/tool.dll") }}
+{{ $.js("/commons") }}
+{{ $.js("goods-list") }}
 {% endblock %}
 
 

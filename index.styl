@@ -1,11 +1,27 @@
 @require "styles/util/box"
 @require "styles/reset"
+@require "styles/layout"
 
 u-pad-export()
 u-mar-export()
 
 export-reset()
+layout-grid-base()
+layout-width-base()
 
+$pc = #E92129
+$bgc = #f7f7f7
+
+body
+  reset-space()
+  bgc $bgc
+
+input:focus
+  outline 0
+
+
+
+@import "ionicons.styl"
 @import "_user-list"
 @import "_goods-list"
 @import "_store-list"
